@@ -1,19 +1,17 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
- TERM="xterm-256color"
-
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/pi/.oh-my-zsh
+  export ZSH=/home/kar/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
-# ZSH_THEME="gnzh"
+ZSH_THEME="gnzh"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="bullet-train"
+# ZSH_THEME="bullet-train"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -98,3 +96,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias rpi="ssh pi@192.168.6.12"
+alias -g L="|less" # Write L after a command to page through the output.

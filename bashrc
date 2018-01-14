@@ -2,6 +2,12 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# if running in terminal...
+if test -t 1; then
+    # ...start zsh
+    exec zsh
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
